@@ -1,5 +1,6 @@
 html {
     font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -10,6 +11,63 @@ html {
 
 .main {}
 
+nav {
+   width: 100%;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -1rem;
+}
+
+#google-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -4rem;
+  
+}
+
+#profile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+li {
+    list-style: none;
+    font-size: 1.2rem;
+    margin: auto 1rem;
+}
+
+a {
+    color:aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#avatar {
+    width: 3.3rem;
+    height: 3.3rem;
+    object-fit: cover;
+    color: white;
+    border: 0;
+    border-radius: 50px;
+}
+
 #logo {
     display: flex;
     flex-direction: column;
@@ -19,31 +77,105 @@ html {
     margin: 15rem auto auto auto;
 }
 
-#search-bar {
+
+
+form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 40rem;
-    height: 3.5rem;
-    border: 0;
+    border: 1px solid rgb(78, 78, 78);
     border-radius: 50px;
+    width: 45rem;
     margin: auto;
-    padding-left: 4rem;
+    padding: 1rem 0;
+}
+
+#search-icon {
+    width: 1.5rem;
+    margin-top: 0.4rem;
+}
+
+#mic-icon {
+    width: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+#search-bar {
+    margin: 0 1rem;
+    padding: 0 5rem 0 0.2rem;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    width: 32rem;
+}
+
+#search-bar:focus{
+    outline: none;
 }
 
 .button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 #search-button{
-    color: white;
-    background-color: rgba(63, 63, 63, 0.5);
-    border: 1px;
+    color: rgb(212, 212, 212);
+    background-color: rgba(63, 63, 63, 0.2);
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 5px;
     margin: 1rem;
     width: 15rem;
-    height: 4rem;
+    height: 3.5rem;
+}
+
+#search-button:hover{
+    color: white;
+    cursor: pointer;
+    background-color: rgba(88, 88, 88, 0.2);
+    border: 1px solid rgb(85, 85, 85);
+}
+
+#lucky-button{
+    color: rgb(212, 212, 212);
+    background-color: rgba(63, 63, 63, 0.2);
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 5px;
+    margin: 1rem;
+    width: 15rem;
+    height: 3.5rem;
+}
+
+#lucky-button:hover{
+    color: white;
+    cursor: pointer;
+    background-color: rgba(88, 88, 88, 0.2);
+    border: 1px solid rgb(85, 85, 85);
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #242424;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 4.5rem;
+}
+
+#business-footer {
+    display: flex;
+    flex-direction: row;
+    margin-left: -4rem;
+}
+
+#privacy-footer {
+    display: flex;
+    flex-direction: row;
 }
